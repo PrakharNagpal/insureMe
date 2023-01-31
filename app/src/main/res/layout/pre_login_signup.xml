@@ -26,4 +26,8 @@
         android:text="@string/user_login_button"
         android:onClick="onUserLoginClick" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECKING GIT"/>
 </LinearLayout>
