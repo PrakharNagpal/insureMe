@@ -29,5 +29,5 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CHECKING GIT ny hritik"/>
+        android:text="CHECKING GIT by a"/>
 </LinearLayout>
