@@ -18,4 +18,5 @@ class MainActivity : AppCompatActivity() {
         }
         // Do something on user login button click
     }
+
 }
