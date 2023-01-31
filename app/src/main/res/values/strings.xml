@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">insureMe</string>
-    <string name="AppName">insureMe</string>
+    <string name="app_name">InsureMe</string>
+    <string name="AppName">InsureMe</string>
     <string name="admin_login">Admin Login</string>
     <string name="user_login_button">User Login</string>
 </resources>
