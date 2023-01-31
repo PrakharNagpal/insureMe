@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:baselineAligned="false"
+
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:text="Let's Simplify Your Health Insurance"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center"
+        android:text="We'll share plans based on your age"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth"
+
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:paddingTop="16dp"
+        android:layout_marginVertical="5dp"
+        />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="5dp"
+        android:padding="10dp"
+        android:hint="(dd/mm/yy)"
+        android:textColorHint="#A9A9A9"
+
+
+        />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="400dp"
+        android:backgroundTint="@color/button_ackground"
+        android:text="CONTINUE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="5dp"
+        android:
+        />
+</LinearLayout>
