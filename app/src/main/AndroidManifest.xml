@@ -20,8 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".InsuranceAdapter"/>
+
         <activity android:name=".LoginActivity"/>
         <activity android:name=".UserLoginActivity"/>
+    <activity android:name=".Select_Insurance"/>
+
     </application>
 
 </manifest>
