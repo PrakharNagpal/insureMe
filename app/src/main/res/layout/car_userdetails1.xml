@@ -2,6 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="20dp"
     android:orientation="vertical">
 
     <TextView
@@ -20,7 +23,12 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"/>
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#00FF00"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
         android:id="@+id/registration"
@@ -28,7 +36,7 @@
         android:layout_height="wrap_content"
         android:text="Registration Number*"
         android:textSize="25sp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="25dp"
         android:textStyle="bold"/>
 
     <EditText
@@ -37,7 +45,10 @@
         android:backgroundTint="#ECECEC"
         android:background="@drawable/edittext"
         android:inputType="number"
+        android:layout_marginTop="25dp"
+
         android:minHeight="48dp"
+        android:padding="10dp"
         android:hint="Enter Registratiom Number"/>
 
     <TextView
@@ -56,6 +67,7 @@
         android:background="@drawable/edittext"
         android:inputType="number"
         android:hint="Enter Engine Number"
+        android:padding="10dp"
         android:minHeight="48dp" />
 
 
@@ -70,6 +82,7 @@
 
     <EditText
         android:layout_width="match_parent"
+        android:padding="10dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#ECECEC"
         android:background="@drawable/edittext"
@@ -79,21 +92,15 @@
 
            />
 
-    <TextView
-        android:id="@+id/Compulsary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*Compulsary Fields"
-        android:textSize="20sp"
-        android:layout_marginTop="75dp"/>
 
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/button_background"
+        android:layout_height="60dp"
+        android:id="@+id/CarContinue2"
         android:text="CONTINUE"
-        android:textColor="#795548"
+
+        android:backgroundTint="@color/button_background"
         android:textSize="20sp" />
 
 

@@ -25,7 +25,8 @@
         <activity android:name=".LoginActivity"/>
         <activity android:name=".UserLoginActivity"/>
     <activity android:name=".Select_Insurance"/>
-
+<activity android:name=".Carinsuranceuserdetails"/>
+        <activity android:name=".Carinsuranceuserdetails1"/>
     </application>
 
 </manifest>
