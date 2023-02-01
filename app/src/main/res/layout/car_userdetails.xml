@@ -98,22 +98,24 @@
         android:padding="10dp"
         android:textColorHint="#A9A9A9" />
 
-    <TextView
-        android:id="@+id/Compulsary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*Compulsary Fields"
-        android:textSize="20sp"
+<!--    <TextView-->
+<!--        android:id="@+id/Compulsary"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="*Compulsary Fields"-->
+<!--        android:textSize="20sp"-->
 
-        android:layout_marginTop="75dp"/>
+<!--        android:layout_marginTop="75dp"/>-->
 
 
     <Button
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:backgroundTint="@color/button_background"
-
+        android:id="@+id/CarContinue1"
         android:text="CONTINUE"
+
 
 
         android:textSize="20sp" />
