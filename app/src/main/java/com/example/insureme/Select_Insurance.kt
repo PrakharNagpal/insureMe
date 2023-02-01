@@ -6,12 +6,13 @@ import androidx.cardview.widget.CardView
 
 class Select_Insurance : AppCompatActivity() {
 
-    private val carcard: CardView =findViewById<CardView>(R.id.CarCard)
-    private val healthcard: CardView =findViewById<CardView>(R.id.HealthCard)
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
             super.onCreate(savedInstanceState)
             setContentView(R.layout.choose_insurancetype)
+        val carcard: CardView =findViewById<CardView>(R.id.CarCard)!!
+        val healthcard: CardView =findViewById<CardView>(R.id.HealthCard)!!
 
             carcard.setOnClickListener {
                 Toast.makeText(this, "Car Insurance selected", Toast.LENGTH_SHORT).show()
