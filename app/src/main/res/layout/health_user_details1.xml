@@ -25,6 +25,12 @@
         android:text="Please share your name as your policy won't look nice without it"
         android:textSize="18dp"
         android:textStyle="italic" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#00FF00"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,6 +50,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginLeft="5dp"
         android:padding="10dp"
+        android:hint="Enter First Name"
 
         />
 
@@ -65,6 +72,7 @@
         android:background="@drawable/edittext"
         android:padding="10dp"
         android:layout_marginRight="8dp"
+        android:hint="Enter Middle Name"
         android:layout_marginLeft="5dp"/>
     <TextView
         android:layout_width="match_parent"
@@ -83,6 +91,7 @@
         android:layout_height="60dp"
         android:background="@drawable/edittext"
         android:padding="10dp"
+        android:hint="Enter Last Name"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="5dp"/>
     
