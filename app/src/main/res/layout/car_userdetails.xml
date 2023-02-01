@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's simplify your Car Insurance"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/policymsg"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+
+
+    <TextView
+        android:id="@+id/firstname_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First name*"
+        android:textSize="25sp"
+        android:layout_marginTop="75dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ECECEC"
+        android:background="@drawable/edittext"
+        android:hint="First name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/lastname_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name*"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ECECEC"
+        android:background="@drawable/edittext"
+        android:hint="last name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+    <TextView
+        android:id="@+id/DateOfBirth_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth*"
+        android:textSize="25sp"
+        android:layout_marginTop="75dp"
+        android:textStyle="bold"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ECECEC"
+        android:hint="(dd/mm/yy)"
+        android:background="@drawable/edittext"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#A9A9A9" />
+
+    <TextView
+        android:id="@+id/Compulsary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Compulsary Fields"
+        android:textSize="20sp"
+        android:layout_marginTop="75dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_background"
+        android:text="CONTINUE"
+        android:textColor="#795548"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
