@@ -2,25 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="20dp"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="Let's simplify your Car Insurance"
         android:textStyle="bold"
         android:textSize="25dp"
+        android:textColor="@color/black"
+
         android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="@string/policymsg"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"/>
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#00FF00"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
         android:id="@+id/firstname_id"
@@ -28,17 +40,22 @@
         android:layout_height="wrap_content"
         android:text="First name*"
         android:textSize="25sp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="25dp"
         android:textStyle="bold"/>
+
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#ECECEC"
+         android:padding="10dp"
         android:background="@drawable/edittext"
         android:hint="First name"
         android:inputType="text"
         android:minHeight="48dp" />
+<!--        android:background="@drawable/round_border"-->
+
+
 
     <TextView
         android:id="@+id/lastname_id"
@@ -54,7 +71,8 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#ECECEC"
         android:background="@drawable/edittext"
-        android:hint="last name"
+        android:padding="10dp"
+        android:hint="Last Name"
         android:inputType="text"
         android:minHeight="48dp" />
 
@@ -77,6 +95,7 @@
         android:background="@drawable/edittext"
         android:inputType="date"
         android:minHeight="48dp"
+        android:padding="10dp"
         android:textColorHint="#A9A9A9" />
 
     <TextView
@@ -85,15 +104,18 @@
         android:layout_height="wrap_content"
         android:text="*Compulsary Fields"
         android:textSize="20sp"
+
         android:layout_marginTop="75dp"/>
 
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/button_background"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/button_background"
+
         android:text="CONTINUE"
-        android:textColor="#795548"
+
+
         android:textSize="20sp" />
 
 
