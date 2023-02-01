@@ -8,6 +8,14 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginVertical="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="0"
+        android:indeterminate="false">
+    </ProgressBar>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,12 +33,7 @@
         android:text="Please share your name as your policy won't look nice without it"
         android:textSize="18dp"
         android:textStyle="italic" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="#00FF00"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="16dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
