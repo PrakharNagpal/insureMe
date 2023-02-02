@@ -109,5 +109,6 @@
         android:padding="10dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="5dp"
+        android:id="@+id/healthContinue1"
         />
 </LinearLayout>
