@@ -7,7 +7,9 @@
     android:baselineAligned="false"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    style="@android:style/Animation"
+    >
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="200dp"
@@ -17,36 +19,44 @@
         />
 
     <TextView
-        android:id="@+id/appNameTextView"
+        android:id="@+id/appNameTextViewSign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User"
         android:textSize="35dp" />
 
     <EditText
-        android:id="@+id/loginIdEditText"
+        android:id="@+id/signEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Login ID"
-        android:inputType="text"
+
+        android:inputType="textEmailAddress"
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/SignPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:height="48dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:minHeight="48dp" />
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/loginButton"
+        android:id="@+id/signButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onLoginClick"
 
-        android:text="Login" />
+        android:text="Signup" />
 
 
 </LinearLayout>
