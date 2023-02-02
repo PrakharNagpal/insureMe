@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "808619068808",
+    "project_id": "insureme-7d2d9",
+    "storage_bucket": "insureme-7d2d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808619068808:android:dd0a77a3f4a5749dcdbe3d",
+        "android_client_info": {
+          "package_name": "com.example.insureme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808619068808-3b2issu1f7jm1ne5s0nofq3s5vnakmvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLVVuUwqcr1Wudw7E1lk-z4Lo9c9t06iw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808619068808-3b2issu1f7jm1ne5s0nofq3s5vnakmvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
