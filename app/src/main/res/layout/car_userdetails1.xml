@@ -50,7 +50,7 @@
         android:background="@drawable/edittext"
         android:inputType="number"
         android:layout_marginTop="25dp"
-
+        android:textColor="@color/black"
         android:minHeight="48dp"
         android:padding="10dp"
         android:hint="Enter Registratiom Number"/>
@@ -71,6 +71,7 @@
         android:background="@drawable/edittext"
         android:inputType="number"
         android:hint="Enter Engine Number"
+        android:textColor="@color/black"
         android:padding="10dp"
         android:minHeight="48dp" />
 
@@ -92,6 +93,7 @@
         android:background="@drawable/edittext"
         android:inputType="date"
         android:hint="Enter Chasis Number"
+        android:textColor="@color/black"
         android:minHeight="48dp"
 
            />

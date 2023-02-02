@@ -17,22 +17,22 @@ class car_userdetails2 : AppCompatActivity() {
 
         val spinner = findViewById<Spinner>(R.id.spinner2)
         val languages = resources.getStringArray(R.array.company_array)
-        if (spinner != null) {
-            val adapter = ArrayAdapter(this,
-                android.R.layout.simple_spinner_item,languages )
-            spinner.adapter = adapter
+        val arrayAdapter=ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,languages)
+        spinner.adapter=arrayAdapter
+        spinner.onItemSelectedListener=object :AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                Toast.makeText(applicationContext,"selected company is="+languages,Toast.LENGTH_SHORT).show()
+            }
 
-            spinner.onItemSelectedListener = object :
-                AdapterView.OnItemSelectedListener {
-                override fun onItemSelected(parent: AdapterView<*>,
-                                            view: View, position: Int, id: Long) {
-                    Toast.makeText(this@car_userdetails2,
-                        getString(R.string.selected_item) + " " +
-                                "" + languages[position], Toast.LENGTH_SHORT).show()
-                }
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
 
-                override fun onNothingSelected(parent: AdapterView<*>) {
-                    // write code to perform some action
-                }
-    }
-}}}
+        }
+
+}}
