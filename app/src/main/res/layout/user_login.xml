@@ -30,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="User Login"
+        android:textColor="@color/black"
         android:textSize="35dp" />
 
     <EditText
@@ -37,6 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Login ID"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:inputType="text"
         android:minHeight="48dp" />
 
@@ -46,6 +49,8 @@
         android:layout_height="wrap_content"
         android:height="48dp"
         android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         android:inputType="textPassword"
         android:minHeight="48dp" />
 
