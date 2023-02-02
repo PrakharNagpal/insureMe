@@ -6,13 +6,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:baselineAligned="false"
     android:gravity="center"
+    android:layout_marginBottom="20dp"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@drawable/appbg"
+    android:padding="10dp">
+<ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:src="@drawable/applogo"
+    android:layout_marginBottom="90dp"/>
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/user"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/appicon"
+        android:layout_marginBottom="30dp"
 
         />
 
@@ -20,7 +29,7 @@
         android:id="@+id/appNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User"
+        android:text="User Login"
         android:textSize="35dp" />
 
     <EditText
@@ -42,9 +51,11 @@
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:onClick="onLoginClick"
+        android:backgroundTint="@color/button_background"
 
         android:text="Login" />
 
