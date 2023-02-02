@@ -16,4 +16,13 @@
     <string name="login_password_hint">Password</string>
     <string name="signup_login_hint">Already have an account? Sign In</string>
     <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="selected_item">Selected item:</string>
+    <string-array name="company_array">
+        <item>Honda</item>
+        <item>Audi</item>
+        <item>Mercedes</item>
+        <item>BMW</item>
+        <item>Hyundai</item>
+        <item>Toyota</item>
+    </string-array>
 </resources>
