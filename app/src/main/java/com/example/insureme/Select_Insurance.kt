@@ -23,6 +23,7 @@ class Select_Insurance : AppCompatActivity() {
             }
 
             healthcard.setOnClickListener {
+                startActivity(Intent(this,healthinsuranceuserdetails::class.java))
                 Toast.makeText(this, "Health Insurance selected", Toast.LENGTH_SHORT).show()
             }
         }

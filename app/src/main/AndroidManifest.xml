@@ -41,6 +41,10 @@
         <activity android:name=".Carinsuranceuserdetails2"/>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".car_userdetails2"/>
+        <activity android:name=".healthinsuranceuserdetails"/>
+        <activity android:name=".healthinsuranceuserdetails1"/>
+        <activity android:name=".healthinsuranceuserdetails2"/>
+        <activity android:name=".healthinsuranceuserdetails3"/>
 <!--        <activity android:name=".User_Login"/>-->
 
     </application>
