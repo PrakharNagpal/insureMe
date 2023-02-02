@@ -57,6 +57,26 @@ class healthinsuranceuserdetails3:AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.health_user_details4)
+        val heathContinue3=findViewById<Button>(R.id.healthContinue4)
+        heathContinue3.setOnClickListener {
+            startActivity(Intent(this, healthinsuranceuserdetails4::class.java))
+            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+
+
+        }
+    }
+}
+class healthinsuranceuserdetails4:AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.health_user_details5)
+        val healthContinue4 = findViewById<Button>(R.id.healthContinue5)
+        healthContinue4.setOnClickListener {
+            //startActivity(Intent(this, healthinsuranceuserdetails3::class.java))
+            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+
+
+        }
     }
 }
 
