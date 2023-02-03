@@ -15,17 +15,17 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class AddInsuranceViewModel: ViewModel() {
+class AddHealthInsuranceViewModel: ViewModel() {
     private val apiService = Retrofit.Builder()
-        .baseUrl("http://192.168.104.173:5000/carInsurance/")
+        .baseUrl("http://192.168.104.173:5000/healthInsurance/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(ApiService::class.java)
 
-    fun pushInsuranceData(cinsurance: postdataclass, onSuccess: () -> Unit, onError: (Throwable) -> Unit) {
+    fun pushInsuranceData(hinsurance: postdataclass, onSuccess: () -> Unit, onError: (Throwable) -> Unit) {
         viewModelScope.launch {
             try {
-                apiService.pushInsuranceData(cinsurance)
+                apiService.pushInsuranceData(hinsurance)
                 onSuccess()
             } catch (t: Throwable) {
                 onError(t)
@@ -33,29 +33,29 @@ class AddInsuranceViewModel: ViewModel() {
         }
     }
 }
-class pushInsurance : AppCompatActivity() {
+class pushHealthInsurance : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.add_healthinsurance)
-        lateinit var insuranceViewModel: AddInsuranceViewModel
+        lateinit var insuranceViewModel: AddHealthInsuranceViewModel
         val addInsurance = findViewById<Button>(R.id.addInsuranceButton)
         val insurance_title=findViewById<EditText>(R.id.addCarInsuranceName)
         val insurance_description=findViewById<EditText>(R.id.addCarInsuranceDesc)
         val insurance_price=findViewById<EditText>(R.id.addCarInsurancePrice)
-        insuranceViewModel = ViewModelProvider(this).get(AddInsuranceViewModel::class.java)
+        insuranceViewModel = ViewModelProvider(this).get(AddHealthInsuranceViewModel::class.java)
 
-       addInsurance.setOnClickListener {
+        addInsurance.setOnClickListener {
             val title = insurance_title.text.toString()
             val description = insurance_description.text.toString()
-            val type="CARP"
+            val type="Health"
             val price = insurance_price.text.toString().toDouble()
 
             val insurance = postdataclass(title, description,type, price)
 
             insuranceViewModel.pushInsuranceData(insurance, onSuccess = {
-                  print("SUCCESSSSSSS")
+                print("SUCCESSSSSSS")
                 startActivity(Intent(this, adminhome::class.java))
                 // handle success
             }, onError = {

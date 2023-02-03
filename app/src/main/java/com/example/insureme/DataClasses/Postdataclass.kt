@@ -1,4 +1,4 @@
-package com.example.insureme.Views
+package com.example.insureme.DataClasses
 
 
 data class postdataclass(
