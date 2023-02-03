@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class InsuranceAdapterNew(private val insurances: List<insurance_dataclass>) :
+class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) :
     RecyclerView.Adapter<InsuranceAdapterNew.InsuranceViewHolder>() {
 
     class InsuranceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -52,14 +52,14 @@ class InsuranceAdapterNew(private val insurances: List<insurance_dataclass>) :
     }
 }
 class InsuranceActivityNew : AppCompatActivity() {
-    private lateinit var viewModel: InsuranceViewModel
+    private lateinit var viewModel: CarInsuranceViewModel
     private lateinit var adapter: InsuranceAdapterNew
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.insurance_list_cards)
         val insuranceCompanyListViewNew = findViewById<RecyclerView>(R.id.insurance_company_list)
-        viewModel = ViewModelProvider(this).get(InsuranceViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(CarInsuranceViewModel::class.java)
         lifecycleScope.launch {
 
             viewModel.fetchInsurances()

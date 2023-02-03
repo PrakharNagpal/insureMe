@@ -1,7 +1,7 @@
 package com.example.insureme
 
 
-    data class insurance_dataclass(
+    data class carinsurance_dataclass(
         val companyName: String,
         val desc: String,
         val price: Double,

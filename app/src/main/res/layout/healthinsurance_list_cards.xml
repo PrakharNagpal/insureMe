@@ -32,23 +32,23 @@
         android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/insurance_company_list"
+            android:id="@+id/healthinsurance_company_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:paddingTop="20dp"
-            android:id="@+id/insurance_company_image"
+            android:id="@+id/healthinsurance_company_image"
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
-<!--            android:src="@drawable/insurance1"-->
+        <!--            android:src="@drawable/insurance1"-->
 
 
 
         <TextView
             android:layout_marginTop="10dp"
-            android:id="@+id/insurance_company_title"
+            android:id="@+id/healthinsurance_company_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -56,13 +56,13 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/insurance_company_description"
+            android:id="@+id/healthinsurance_company_description"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/insurance_company_price"
+            android:id="@+id/healthinsurance_company_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

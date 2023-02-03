@@ -48,6 +48,7 @@
         <activity android:name=".healthinsuranceuserdetails3"/>
         <activity android:name=".healthinsuranceuserdetails4"/>
         <activity android:name=".InsuranceActivityNew"/>
+        <activity android:name=".HealthInsuranceActivityNew"/>
 <!--        <activity android:name=".healthinsuranceuserdetails5"/>-->
 <!--        <activity android:name=".User_Login"/>-->
 

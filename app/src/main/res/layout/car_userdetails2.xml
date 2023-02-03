@@ -106,7 +106,8 @@
         android:backgroundTint="@color/button_background"
         android:text="CONTINUE"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:id="@+id/CarContinue3"/>
 
 
 </LinearLayout>
