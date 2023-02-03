@@ -5,5 +5,6 @@ package com.example.insureme
         val companyName: String,
         val desc: String,
         val price: Double,
+        val image: Int,
       //  val id:String
     )

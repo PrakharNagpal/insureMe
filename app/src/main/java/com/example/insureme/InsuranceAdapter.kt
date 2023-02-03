@@ -22,6 +22,7 @@ class InsuranceAdapterNew(private val insurances: List<insurance_dataclass>) :
         val title = itemView.findViewById<TextView>(R.id.insurance_company_title)
         val description = itemView.findViewById<TextView>(R.id.insurance_company_description)
         val price = itemView.findViewById<TextView>(R.id.insurance_company_price)
+        val image=itemView.findViewById<ImageView>(R.id.insurance_company_image)
 
 
     }
@@ -38,6 +39,14 @@ class InsuranceAdapterNew(private val insurances: List<insurance_dataclass>) :
         holder.title.text = insurance.companyName
         holder.description.text = insurance.desc
         holder.price.text = insurance.price.toString()
+        if (holder.title.text.equals("HDFC"))
+        {
+            holder.image.setImageResource(R.drawable.insurance1)
+        }
+        else
+        {
+            holder.image.setImageResource(R.drawable.insurance2)
+        }
         // Use Picasso or Glide library to load the image from the URL
         // Picasso.get().load(insurance.image).into(holder.image)
     }
