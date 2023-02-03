@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
+    android:background="@drawable/mainbg"
     android:orientation="vertical"
+
     android:gravity="center">
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:src="@drawable/applogo"
-        android:layout_marginBottom="50dp"
+
 
 
         android:contentDescription="App Logo" />
@@ -20,6 +21,20 @@
 <!--        android:layout_height="wrap_content"-->
 <!--        android:text="@string/AppName"-->
 <!--        android:textSize="24sp" />-->
+    <Button
+        android:id="@+id/userLoginButton"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/button_background"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_login_button"
+        android:background="@drawable/round_border"
+        android:onClick="onUserLoginClick"
+
+        />
 
     <Button
         android:id="@+id/adminLoginButton"
@@ -27,21 +42,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
+        android:background="@drawable/round_border"
         android:backgroundTint="@color/button_background"
         android:text="@string/admin_login"
         android:onClick="onAdminLoginClick" />
 
-    <Button
-        android:id="@+id/userLoginButton"
-        android:layout_marginLeft="12dp"
-        android:backgroundTint="@color/button_background"
-        android:layout_marginRight="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/user_login_button"
-        android:onClick="onUserLoginClick"
-
-        />
 
 
 </LinearLayout>
