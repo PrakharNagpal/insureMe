@@ -28,6 +28,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun onAdminLoginClick(view: View) {
+        startActivity(Intent(this,adminhome::class.java))
 
         // Do something on admin login button click
     }
