@@ -15,7 +15,7 @@ class splash_screen : AppCompatActivity() {
 
         // Start the main activity after a short delay
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, SPLASH_SCREEN_DELAY)
     }
