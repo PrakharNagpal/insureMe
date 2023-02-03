@@ -55,11 +55,11 @@
         android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/adminloginButton"
+        android:id="@+id/adminloginButtonnew"
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:onClick="onLoginClick"
+        android:onClick="onAdminLoginClick"
         android:backgroundTint="@color/button_background"
 
         android:text="Login" />
