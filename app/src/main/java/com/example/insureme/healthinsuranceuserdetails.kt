@@ -72,7 +72,7 @@ class healthinsuranceuserdetails4:AppCompatActivity() {
         setContentView(R.layout.health_user_details5)
         val healthContinue4 = findViewById<Button>(R.id.healthContinue5)
         healthContinue4.setOnClickListener {
-            //startActivity(Intent(this, healthinsuranceuserdetails3::class.java))
+            startActivity(Intent(this, InsuranceActivityNew::class.java))
             Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
 
