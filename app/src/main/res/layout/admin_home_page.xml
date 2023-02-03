@@ -22,14 +22,14 @@
     <!--        android:textSize="24sp" />-->
 
     <Button
-        android:id="@+id/adminLoginButton"
+        android:id="@+id/onAddInsurance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:backgroundTint="@color/button_background"
         android:text="@string/add_an_insurance"
-        android:onClick="onAdminLoginClick" />
+        android:onClick="onAddInsuranceClick" />
 
     <Button
         android:id="@+id/userLoginButton"
