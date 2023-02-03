@@ -54,6 +54,7 @@
         <activity android:name=".pushInsurance"/>
         <activity android:name=".Views.adminLogin"/>
         <activity android:name=".pushHealthInsurance"/>
+        <activity android:name=".ChooseAddInsuranceType"/>
         <!--        <activity android:name=".healthinsuranceuserdetails5"/>-->
 <!--        <activity android:name=".User_Login"/>-->
 
