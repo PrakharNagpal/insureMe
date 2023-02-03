@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
-
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -46,6 +47,7 @@
         <activity android:name=".healthinsuranceuserdetails2"/>
         <activity android:name=".healthinsuranceuserdetails3"/>
         <activity android:name=".healthinsuranceuserdetails4"/>
+        <activity android:name=".InsuranceActivityNew"/>
 <!--        <activity android:name=".healthinsuranceuserdetails5"/>-->
 <!--        <activity android:name=".User_Login"/>-->
 
