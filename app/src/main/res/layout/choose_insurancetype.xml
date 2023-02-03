@@ -2,12 +2,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/button_background"
+    android:background="#C0CAC6"
     android:orientation="vertical">
 
 
     <androidx.cardview.widget.CardView
+
         android:id="@+id/CarCard"
+        android:backgroundTint="#E2FFF5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
