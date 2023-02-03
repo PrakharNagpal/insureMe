@@ -1,10 +1,10 @@
-package com.example.insureme
-import android.annotation.SuppressLint
+package com.example.insureme.Views
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.cardview.widget.CardView
+import com.example.insureme.R
 
 class Select_Insurance : AppCompatActivity() {
 
@@ -19,11 +19,11 @@ class Select_Insurance : AppCompatActivity() {
 
             carcard.setOnClickListener {
                 Toast.makeText(this, "Car Insurance selected", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,Carinsuranceuserdetails::class.java))
+                startActivity(Intent(this, Carinsuranceuserdetails::class.java))
             }
 
             healthcard.setOnClickListener {
-                startActivity(Intent(this,healthinsuranceuserdetails::class.java))
+                startActivity(Intent(this, healthinsuranceuserdetails::class.java))
                 Toast.makeText(this, "Health Insurance selected", Toast.LENGTH_SHORT).show()
             }
         }

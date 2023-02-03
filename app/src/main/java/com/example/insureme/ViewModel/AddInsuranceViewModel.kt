@@ -2,13 +2,14 @@ package com.example.insureme
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
+import com.example.insureme.Views.adminhome
+import com.example.insureme.Views.postdataclass
 import kotlinx.coroutines.launch
 
 import retrofit2.Retrofit
@@ -55,7 +56,7 @@ class pushInsurance : AppCompatActivity() {
 
             insuranceViewModel.pushInsuranceData(insurance, onSuccess = {
                   print("SUCCESSSSSSS")
-                startActivity(Intent(this,adminhome::class.java))
+                startActivity(Intent(this, adminhome::class.java))
                 // handle success
             }, onError = {
                 // handle error
