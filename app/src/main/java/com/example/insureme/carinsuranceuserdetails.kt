@@ -44,6 +44,10 @@ class Carinsuranceuserdetails1:AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.car_userdetails2)
+            val CarContinue3=findViewById<Button>(R.id.CarContinue3)
+            CarContinue3.setOnClickListener{
+                startActivity(Intent(this,InsuranceActivityNew::class.java))
+            }
 
 
 
