@@ -9,6 +9,7 @@ class InsuranceViewModel : ViewModel() {
      suspend fun fetchInsurances() {
         val insuranceinterface=ServiceBuilder.buildService(InsuranceApiService::class.java)
         val response = insuranceinterface.getInsurances()
+         print(insurances)
         insurances.postValue(response)
     }
 }
