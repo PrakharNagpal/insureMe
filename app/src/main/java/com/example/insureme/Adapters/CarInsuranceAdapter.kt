@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insureme.ViewModel.CarInsuranceViewModel
-import com.example.insureme.Views.carinsurance_dataclass
+import com.example.insureme.DataClasses.carinsurance_dataclass
 
 class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) :
     RecyclerView.Adapter<InsuranceAdapterNew.InsuranceViewHolder>() {

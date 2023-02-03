@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.insureme.R
+import com.example.insureme.pushHealthInsurance
 import com.example.insureme.pushInsurance
 
 
@@ -19,7 +20,7 @@ class adminhome : AppCompatActivity() {
         fun onAddInsuranceClick(view: View)
         {
 
-            startActivity(Intent(this, pushInsurance::class.java))
+            startActivity(Intent(this, pushHealthInsurance::class.java))
 
         }
 
