@@ -35,8 +35,8 @@ class InsuranceAdapterNew(private val insurances: List<insurance_dataclass>) :
 
     override fun onBindViewHolder(holder: InsuranceViewHolder, position: Int) {
         val insurance = insurances[position]
-        holder.title.text = insurance.Title
-        holder.description.text = insurance.description
+        holder.title.text = insurance.companyName
+        holder.description.text = insurance.desc
         holder.price.text = insurance.price.toString()
         // Use Picasso or Glide library to load the image from the URL
         // Picasso.get().load(insurance.image).into(holder.image)
