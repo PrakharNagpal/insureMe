@@ -52,6 +52,7 @@
         <activity android:name=".HealthInsuranceActivityNew"/>
         <activity android:name=".addNewInsurance"/>
         <activity android:name=".pushInsurance"/>
+        <activity android:name=".adminLogin"/>
 <!--        <activity android:name=".healthinsuranceuserdetails5"/>-->
 <!--        <activity android:name=".User_Login"/>-->
 
