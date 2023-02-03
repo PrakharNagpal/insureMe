@@ -123,6 +123,8 @@ class UserLoginActivity : AppCompatActivity() {
         if (Patterns.EMAIL_ADDRESS.matcher(loginId).matches()) {
             Toast.makeText(applicationContext, "Valid email address",
                 Toast.LENGTH_SHORT).show()
+                        startActivity(Intent(this,Select_Insurance::class.java))
+        Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
 
         } else {
@@ -145,17 +147,6 @@ class UserLoginActivity : AppCompatActivity() {
         }
 
 
-        // Perform the actual login here
-        // ...
 
-        // Show a success message
-        loginbutton.setOnClickListener{
-
-
-
-            startActivity(Intent(this,Select_Insurance::class.java))
-        Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
-
-        }
     }
 }

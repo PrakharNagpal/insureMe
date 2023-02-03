@@ -17,6 +17,14 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.pre_login_signup)
 
 
+
+    }
+    fun onUserLoginClick(view: View) {
+//        val moveToLoginScreen=findViewById<Button>(R.id.userLoginButton)
+//        moveToLoginScreen.setOnClickListener{
+            startActivity(Intent(this,UserLoginActivity::class.java))
+
+        // Do something on user login button click
     }
 
     fun onAdminLoginClick(view: View) {
