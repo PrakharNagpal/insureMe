@@ -13,6 +13,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.insureme.ViewModel.HealthInsuranceViewModel
+import com.example.insureme.Views.healthinsurance_dataclass
 
 class HealthInsuranceAdapterNew(private val Healthinsurances: List<healthinsurance_dataclass>) :
     RecyclerView.Adapter<HealthInsuranceAdapterNew.HealthInsuranceViewHolder>() {

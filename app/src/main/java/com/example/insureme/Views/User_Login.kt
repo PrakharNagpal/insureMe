@@ -1,4 +1,4 @@
-package com.example.insureme
+package com.example.insureme.Views
 import android.util.Patterns;
 //
 //import android.content.Intent
@@ -100,6 +100,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.insureme.R
 
 class UserLoginActivity : AppCompatActivity() {
 
@@ -123,7 +124,7 @@ class UserLoginActivity : AppCompatActivity() {
         if (Patterns.EMAIL_ADDRESS.matcher(loginId).matches()) {
             Toast.makeText(applicationContext, "Valid email address",
                 Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this,Select_Insurance::class.java))
+                        startActivity(Intent(this, Select_Insurance::class.java))
         Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
 
