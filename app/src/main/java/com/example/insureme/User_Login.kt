@@ -1,5 +1,5 @@
 package com.example.insureme
-
+import android.util.Patterns;
 //
 //import android.content.Intent
 //import androidx.appcompat.app.AppCompatActivity
@@ -105,6 +105,7 @@ class UserLoginActivity : AppCompatActivity() {
 
     private lateinit var loginIdEditText: EditText
     private lateinit var passwordEditText: EditText
+    private val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+.+[a-z]+"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -119,7 +120,18 @@ class UserLoginActivity : AppCompatActivity() {
         val loginbutton= findViewById<Button>(R.id.loginButton)
         val loginId = loginIdEditText.text.toString().trim()
         val password = passwordEditText.text.toString().trim()
+        if (Patterns.EMAIL_ADDRESS.matcher(loginId).matches()) {
+            Toast.makeText(applicationContext, "Valid email address",
+                Toast.LENGTH_SHORT).show()
 
+
+        } else {
+            Toast.makeText(applicationContext, "Invalid email address",
+                Toast.LENGTH_SHORT).show()
+            loginIdEditText.requestFocus()
+            return
+
+        }
         if (loginId.isEmpty()) {
             loginIdEditText.error = "Login ID is required"
             loginIdEditText.requestFocus()
@@ -132,11 +144,15 @@ class UserLoginActivity : AppCompatActivity() {
             return
         }
 
+
         // Perform the actual login here
         // ...
 
         // Show a success message
         loginbutton.setOnClickListener{
+
+
+
             startActivity(Intent(this,Select_Insurance::class.java))
         Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
