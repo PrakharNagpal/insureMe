@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class AddInsuranceViewModel: ViewModel() {
     private val apiService = Retrofit.Builder()
-        .baseUrl("http://192.168.104.173:5000/carInsurance/")
+        .baseUrl("http://10.20.37.60:5000/carInsurance/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(ApiService::class.java)
