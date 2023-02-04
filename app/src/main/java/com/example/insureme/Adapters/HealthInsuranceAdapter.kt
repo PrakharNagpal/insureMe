@@ -1,4 +1,5 @@
 package com.example.insureme
+import android.content.Intent
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insureme.ViewModel.HealthInsuranceViewModel
 import com.example.insureme.Views.healthinsurance_dataclass
+import com.example.insureme.Views.standard_packageinsurancepage
 
 class HealthInsuranceAdapterNew(private val Healthinsurances: List<healthinsurance_dataclass>) :
     RecyclerView.Adapter<HealthInsuranceAdapterNew.HealthInsuranceViewHolder>() {
@@ -42,7 +44,7 @@ class HealthInsuranceAdapterNew(private val Healthinsurances: List<healthinsuran
         holder.description.text = insurance.desc
         holder.price.text = insurance.price.toString()
 
-            holder.image.setImageResource(R.drawable.insurance1)
+        holder.image.setImageResource(R.drawable.insurance1)
 
 //        else
 //        {
@@ -71,6 +73,10 @@ class HealthInsuranceActivityNew : AppCompatActivity() {
         })
 
         HealthinsuranceCompanyListViewNew.layoutManager = LinearLayoutManager(this)
+    }
+    fun goToStandardInsurance(view:View)
+    {
+        startActivity(Intent(this,standard_packageinsurancepage::class.java))
     }
 }
 

@@ -5,7 +5,7 @@ package com.example.insureme
     import retrofit2.converter.gson.GsonConverterFactory
 
     object ServiceBuilder {
-        private const val URL ="http://192.168.104.173:5000/carInsurance/"
+        private const val URL ="http://10.20.37.60:5000/carInsurance/"
         //CREATE HTTP CLIENT
 //        private val okHttp =OkHttpClient.Builder()
 
