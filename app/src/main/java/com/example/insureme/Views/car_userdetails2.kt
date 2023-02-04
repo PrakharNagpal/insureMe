@@ -1,4 +1,4 @@
-package com.example.insureme
+package com.example.insureme.Views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
+import com.example.insureme.R
 
 class car_userdetails2 : AppCompatActivity() {
 

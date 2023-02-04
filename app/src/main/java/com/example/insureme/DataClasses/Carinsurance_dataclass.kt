@@ -1,4 +1,4 @@
-package com.example.insureme
+package com.example.insureme.DataClasses
 
 
     data class carinsurance_dataclass(

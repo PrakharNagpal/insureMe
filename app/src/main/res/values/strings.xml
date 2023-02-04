@@ -17,6 +17,8 @@
     <string name="signup_login_hint">Already have an account? Sign In</string>
     <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
     <string name="selected_item">Selected item:</string>
+    <string name="add_an_insurance">Add an Insurance</string>
+    <string name="delete_an_insurance">Delete an Insurance</string>
     <string-array name="company_array">
         <item>Honda</item>
         <item>Audi</item>

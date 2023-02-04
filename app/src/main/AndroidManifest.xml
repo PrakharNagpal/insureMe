@@ -15,7 +15,7 @@
         android:theme="@style/Theme.InsureMe"
         tools:targetApi="31">
         <activity
-            android:name=".splash_screen"
+            android:name=".Views.splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,22 +34,28 @@
         </activity>
         <activity android:name=".InsuranceAdapter"/>
 
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".UserLoginActivity"/>
-    <activity android:name=".Select_Insurance"/>
-<activity android:name=".Carinsuranceuserdetails"/>
-        <activity android:name=".Carinsuranceuserdetails1"/>
-        <activity android:name=".Carinsuranceuserdetails2"/>
-        <activity android:name=".SignUpActivity"/>
-        <activity android:name=".car_userdetails2"/>
-        <activity android:name=".healthinsuranceuserdetails"/>
-        <activity android:name=".healthinsuranceuserdetails1"/>
-        <activity android:name=".healthinsuranceuserdetails2"/>
-        <activity android:name=".healthinsuranceuserdetails3"/>
-        <activity android:name=".healthinsuranceuserdetails4"/>
+        <activity android:name=".Views.LoginActivity"/>
+        <activity android:name=".Views.UserLoginActivity"/>
+    <activity android:name=".Views.Select_Insurance"/>
+<activity android:name=".Views.Carinsuranceuserdetails"/>
+        <activity android:name=".Views.adminhome"/>
+        <activity android:name=".Views.Carinsuranceuserdetails1"/>
+        <activity android:name=".Views.Carinsuranceuserdetails2"/>
+        <activity android:name=".Views.SignUpActivity"/>
+        <activity android:name=".Views.car_userdetails2"/>
+        <activity android:name=".Views.healthinsuranceuserdetails"/>
+        <activity android:name=".Views.healthinsuranceuserdetails1"/>
+        <activity android:name=".Views.healthinsuranceuserdetails2"/>
+        <activity android:name=".Views.healthinsuranceuserdetails3"/>
+        <activity android:name=".Views.healthinsuranceuserdetails4"/>
         <activity android:name=".InsuranceActivityNew"/>
         <activity android:name=".HealthInsuranceActivityNew"/>
-<!--        <activity android:name=".healthinsuranceuserdetails5"/>-->
+        <activity android:name=".Views.addNewInsurance"/>
+        <activity android:name=".pushInsurance"/>
+        <activity android:name=".Views.adminLogin"/>
+        <activity android:name=".pushHealthInsurance"/>
+        <activity android:name=".ChooseAddInsuranceType"/>
+        <!--        <activity android:name=".healthinsuranceuserdetails5"/>-->
 <!--        <activity android:name=".User_Login"/>-->
 
     </application>
