@@ -3,6 +3,7 @@ package com.example.insureme.Views
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.insureme.R
 
@@ -20,6 +21,8 @@ class splash_screen : AppCompatActivity() {
             finish()
         }, SPLASH_SCREEN_DELAY)
     }
+
+
 
     companion object {
         private const val SPLASH_SCREEN_DELAY = 3000L // 1 second
