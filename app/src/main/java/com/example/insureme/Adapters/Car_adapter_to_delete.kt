@@ -36,10 +36,10 @@ class CarInsuranceAdapterDelete(private val insurances: List<carinsurance_datacl
         // val image = itemView.findViewById<ImageView>(R.id.insurance_company_image)
 
 
-        val title = itemView.findViewById<TextView>(R.id.insurance_company_title)
-        val description = itemView.findViewById<TextView>(R.id.insurance_company_description)
-        val price = itemView.findViewById<TextView>(R.id.insurance_company_price)
-        val image=itemView.findViewById<ImageView>(R.id.insurance_company_image)
+        val title = itemView.findViewById<TextView>(R.id.deleteinsurance_company_title)
+        val description = itemView.findViewById<TextView>(R.id.deleteinsurance_company_description)
+        val price = itemView.findViewById<TextView>(R.id.deleteinsurance_company_price)
+        val image=itemView.findViewById<ImageView>(R.id.deleteinsurance_company_image)
 
 
         fun bind(_id: String,apiService: ApiServiceDelete)
@@ -76,7 +76,7 @@ class CarInsuranceAdapterDelete(private val insurances: List<carinsurance_datacl
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): InsuranceViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.insurance_list_cards, parent, false)
+            .inflate(R.layout.deleteinsurance_list_cards, parent, false)
         return InsuranceViewHolder(view)
     }
     override fun getItemCount() = insurances.size
@@ -109,8 +109,8 @@ class InsuranceActivityDelete : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.insurance_list_cards)
-        val insuranceCompanyListViewNew = findViewById<RecyclerView>(R.id.insurance_company_list)
+        setContentView(R.layout.deleteinsurance_list_cards)
+        val insuranceCompanyListViewNew = findViewById<RecyclerView>(R.id.deleteinsurance_company_list)
         viewModel = ViewModelProvider(this).get(CarInsuranceViewModel::class.java)
         lifecycleScope.launch {
 

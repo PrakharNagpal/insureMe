@@ -7,7 +7,6 @@
 
     android:orientation="vertical"
     android:padding="10dp">
-
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -22,23 +21,24 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginVertical="10dp"
-        android:text="Let's Simplify adding New Insurance"
+        android:text="Let's Simplify deleting New Insurance"
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold" />
+
 
     <TextView
         android:layout_width="371dp"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:layout_gravity="center"
-        android:text="We'll add insurance based on your Choice"
+        android:text="We'll delete insurance based on your Choice"
         android:textSize="18dp"
         android:textStyle="italic" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Insurance you want to add"
+        android:text="Insurance you want to delete"
 
         android:layout_marginLeft="10dp"
         android:textStyle="bold"
@@ -48,13 +48,13 @@
         android:layout_marginVertical="5dp"
         />
     <RadioGroup
-        android:id="@+id/radio_group_chooseInsurance"
+        android:id="@+id/deleteradio_group_chooseInsurance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
 
         <RadioButton
-            android:id="@+id/radio_button_Car"
+            android:id="@+id/deleteradio_button_Car"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Car Insurance"
@@ -63,7 +63,7 @@
             android:textStyle="bold"/>
 
         <RadioButton
-            android:id="@+id/radio_button_Heath"
+            android:id="@+id/deleteradio_button_Heath"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Health Insurance"

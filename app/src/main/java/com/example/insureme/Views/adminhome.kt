@@ -24,7 +24,7 @@ class adminhome : AppCompatActivity() {
     fun onDeleteInsuranceClick(view: View)
     {
 
-        startActivity(Intent(this, HealthInsuranceActivityDelete::class.java))
+        startActivity(Intent(this, ChooseDeleteInsuranceType::class.java))
 
     }
 
