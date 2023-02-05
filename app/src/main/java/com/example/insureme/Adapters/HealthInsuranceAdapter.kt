@@ -16,7 +16,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insureme.ViewModel.HealthInsuranceViewModel
 import com.example.insureme.Views.healthinsurance_dataclass
-import com.example.insureme.Views.standard_packageinsurancepage
+
+import com.example.insureme.Views.standard_packageinsurancepage_health
 
 class HealthInsuranceAdapterNew(private val Healthinsurances: List<healthinsurance_dataclass>) :
     RecyclerView.Adapter<HealthInsuranceAdapterNew.HealthInsuranceViewHolder>() {
@@ -74,9 +75,9 @@ class HealthInsuranceActivityNew : AppCompatActivity() {
 
         HealthinsuranceCompanyListViewNew.layoutManager = LinearLayoutManager(this)
     }
-    fun goToStandardInsurance(view:View)
+    fun goToStandardInsuranceHealth(view:View)
     {
-        startActivity(Intent(this,standard_packageinsurancepage::class.java))
+        startActivity(Intent(this, standard_packageinsurancepage_health::class.java))
     }
 }
 
