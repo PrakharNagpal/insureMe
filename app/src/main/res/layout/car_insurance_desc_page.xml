@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
 
-        android:text="HealthCare package with an outpatient addon"
+        android:text="Complete package with third-party Laibility Addon"
         android:textSize="18dp"
         android:textColor="#16242B"
         />
@@ -31,8 +31,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="₹1800/Month"
-    android:textColor="@color/black"
+        android:text="₹18000/Year"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="22dp"
 
@@ -59,12 +59,12 @@
 
 
         <TextView
-            android:layout_width="191dp"
+            android:layout_width="254dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Hospital Charges"
+            android:text="Accidental Damage"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -91,7 +91,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Cancer Treatment"
+            android:text="Engine Cover"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -118,7 +118,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Covid-19 Treatment"
+            android:text="Electronic Equipments Cover"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -145,7 +145,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Pre-Existing Conditions"
+            android:text="24/7 Road Side Assistance"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -172,7 +172,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Emegrency Dental"
+            android:text="Lost Key Cover"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -208,7 +208,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Complimentary addon OPD"
+            android:text="Complimentary TPL addon"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -223,12 +223,11 @@
         android:id="@+id/addInsuranceButton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-
+android:onClick="gotoLastPage"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="8dp"
         android:backgroundTint="@color/button_background"
         android:padding="10dp"
-        android:onClick="gotoLastPageHealth"
         android:text="CONTINUE"
         android:textSize="20dp"
         android:textStyle="bold" />
