@@ -11,21 +11,25 @@
 
     android:orientation="vertical"
     android:padding="15dp">
-
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logopg"
+        android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/purple_700"
-        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="7dp"
         android:text="Standard Package"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="371dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
+
 
         android:text="Complete package with third-party Laibility Addon"
         android:textSize="18dp"
@@ -47,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:background="#BCB7B7"
-        android:layout_marginBottom="10dp"/>
+       />
 
 
     <LinearLayout
@@ -200,8 +204,8 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="92dp"
-            android:layout_height="71dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:src="@drawable/ic_star"
             android:visibility="visible" />
 
@@ -209,7 +213,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="3dp"
             android:paddingTop="16dp"
 
             android:text="Complimentary TPL addon"
