@@ -2,17 +2,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C0CAC6"
+    android:background="@drawable/carbg"
     android:orientation="vertical">
 
 
     <androidx.cardview.widget.CardView
 
         android:id="@+id/CarCard"
-        android:backgroundTint="#E2FFF5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_width="357dp"
+        android:layout_gravity="center"
+        android:layout_height="261dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="16dp"
+
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp">
 
@@ -23,15 +26,15 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="178dp"
+                android:layout_height="162dp"
 
                 android:layout_marginLeft="80dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/car" />
+                android:src="@drawable/carins" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="65dp"
                 android:padding="16dp"
@@ -44,29 +47,30 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
         android:id="@+id/HealthCard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="357dp"
+        android:layout_height="243dp"
         android:layout_margin="16dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="357dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginLeft="80dp"
+                android:layout_width="126dp"
+                android:layout_height="147dp"
+                android:layout_marginLeft="120dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/health" />
+                android:src="@drawable/doc" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="45dp"
                 android:padding="16dp"
                 android:text="Health Insurance"
 

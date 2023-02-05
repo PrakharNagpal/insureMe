@@ -53,6 +53,7 @@
         android:hint="Year of purchase"
         android:textColor="@color/black"
         android:backgroundTint="#ECECEC"
+        android:padding="10dp"
         android:background="@drawable/edittext"
         android:inputType="number"
         android:maxLength="4"
@@ -62,6 +63,7 @@
 
     <TextView
         android:id="@+id/enginenumber"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Company"
@@ -71,15 +73,17 @@
 
 
 
-    <Spinner
-        android:id="@+id/spinner2"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        android:contentDescription="Company"
+        android:hint="Company Name"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#ECECEC"
+        android:background="@drawable/edittext"
+        android:inputType="textShortMessage"
 
-        />
+        android:minHeight="48dp" />
 
 
 
@@ -97,9 +101,10 @@
         android:layout_height="wrap_content"
         android:hint="Model of the Car"
         android:textColor="@color/black"
+        android:padding="10dp"
         android:backgroundTint="#ECECEC"
         android:background="@drawable/edittext"
-        android:inputType="date"
+        android:inputType="textShortMessage"
         android:minHeight="48dp" />
 
 
@@ -109,7 +114,7 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/button_background"
         android:text="CONTINUE"
-        android:textColor="@color/black"
+
         android:textSize="20sp"
         android:id="@+id/CarContinue3"/>
 
