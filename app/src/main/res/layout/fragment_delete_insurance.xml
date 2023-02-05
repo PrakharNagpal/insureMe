@@ -7,10 +7,15 @@
 
     android:orientation="vertical"
     android:padding="10dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logopg"
+        android:layout_gravity="center"/>
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="10dp"
         style="?android:attr/progressBarStyleHorizontal"
         android:progress="40"
         android:indeterminate="false">
