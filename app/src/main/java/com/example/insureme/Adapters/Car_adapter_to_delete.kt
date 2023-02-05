@@ -1,33 +1,76 @@
 package com.example.insureme
 import android.content.Intent
-import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat.startActivity
+import androidx.lifecycle.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insureme.ViewModel.CarInsuranceViewModel
 import com.example.insureme.DataClasses.carinsurance_dataclass
-import com.example.insureme.Views.standard_packageinsurancepage
+import com.example.insureme.Views.adminLogin
+import okhttp3.ResponseBody
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.simplexml.SimpleXmlConverterFactory
 
-class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) :
-    RecyclerView.Adapter<InsuranceAdapterNew.InsuranceViewHolder>() {
-
+class CarInsuranceAdapterDelete(private val insurances: List<carinsurance_dataclass>) :
+    RecyclerView.Adapter<CarInsuranceAdapterDelete.InsuranceViewHolder>() {
+    private val apiService = Retrofit.Builder()
+        .baseUrl("http://192.168.104.173:5000/carInsurance/")
+        .addConverterFactory(SimpleXmlConverterFactory.create())
+        .build()
+        .create(ApiServiceDelete::class.java)
     class InsuranceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-       // val image = itemView.findViewById<ImageView>(R.id.insurance_company_image)
+        // val image = itemView.findViewById<ImageView>(R.id.insurance_company_image)
+
+
         val title = itemView.findViewById<TextView>(R.id.insurance_company_title)
         val description = itemView.findViewById<TextView>(R.id.insurance_company_description)
         val price = itemView.findViewById<TextView>(R.id.insurance_company_price)
         val image=itemView.findViewById<ImageView>(R.id.insurance_company_image)
 
+
+        fun bind(_id: String,apiService: ApiServiceDelete)
+        {
+
+            itemView.setOnClickListener {
+
+                apiService.deleteData(_id)
+                    .enqueue(object : Callback<Void> {
+                        override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                            if (response.isSuccessful) {
+                                //startActivity(Intent(this, ChooseAddInsuranceType::class.java))
+
+                                Log.d("SUCCESS","SUCCESSFULLY DELETED")
+
+
+                                // remove the item from the RecyclerView data set
+                            } else {
+                                Log.d("Failed","Failed to delete")
+                                // show an error message
+                            }
+                        }
+
+                        override fun onFailure(call: Call<Void>, t: Throwable) {
+                            print("FAILS")
+                            // show an error message
+                        }
+                    })
+
+            }
+        }
 
     }
 
@@ -43,6 +86,7 @@ class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) 
         holder.title.text = insurance.companyName
         holder.description.text = insurance.desc
         holder.price.text = insurance.price.toString()
+
         if (holder.title.text.equals("HDFC"))
         {
             holder.image.setImageResource(R.drawable.insurance1)
@@ -51,13 +95,17 @@ class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) 
         {
             holder.image.setImageResource(R.drawable.insurance2)
         }
-        // Use Picasso or Glide library to load the image from the URL
-        // Picasso.get().load(insurance.image).into(holder.image)
+        holder.bind(insurance._id, apiService )
+
+        }
+
+
     }
-}
-class InsuranceActivityNew : AppCompatActivity() {
+
+
+class InsuranceActivityDelete : AppCompatActivity() {
     private lateinit var viewModel: CarInsuranceViewModel
-    private lateinit var adapter: InsuranceAdapterNew
+    private lateinit var adapter: CarInsuranceAdapterDelete
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -69,17 +117,17 @@ class InsuranceActivityNew : AppCompatActivity() {
             viewModel.fetchInsurances()
         }
         viewModel.insurances.observe(this, Observer {
-            adapter = InsuranceAdapterNew(it)
+            adapter = CarInsuranceAdapterDelete(it)
             insuranceCompanyListViewNew.adapter = adapter
         })
 
         insuranceCompanyListViewNew.layoutManager = LinearLayoutManager(this)
-    }
-    fun goToStandardInsurance(view:View)
-    {
-        startActivity(Intent(this, standard_packageinsurancepage::class.java))
 
-    }
+
+        }
+
 
 }
+
+
 

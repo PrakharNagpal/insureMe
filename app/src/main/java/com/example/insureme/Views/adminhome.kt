@@ -4,10 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.insureme.ChooseAddInsuranceType
-import com.example.insureme.R
-import com.example.insureme.pushHealthInsurance
-import com.example.insureme.pushInsurance
+import com.example.insureme.*
 
 
 class adminhome : AppCompatActivity() {
@@ -24,6 +21,12 @@ class adminhome : AppCompatActivity() {
             startActivity(Intent(this, ChooseAddInsuranceType::class.java))
 
         }
+    fun onDeleteInsuranceClick(view: View)
+    {
+
+        startActivity(Intent(this, HealthInsuranceActivityDelete::class.java))
+
+    }
 
 
 
