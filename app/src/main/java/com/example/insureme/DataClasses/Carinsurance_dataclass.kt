@@ -6,5 +6,6 @@ package com.example.insureme.DataClasses
         val desc: String,
         val price: Double,
         val image: Int,
+        val _id :String
       //  val id:String
     )

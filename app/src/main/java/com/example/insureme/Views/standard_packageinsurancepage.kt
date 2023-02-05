@@ -9,5 +9,7 @@ class standard_packageinsurancepage:AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.health_insurance_desc_page)
+
     }
+
 }
