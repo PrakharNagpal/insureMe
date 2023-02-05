@@ -7,7 +7,6 @@
 
     android:orientation="vertical"
     android:padding="10dp">
-
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -26,6 +25,7 @@
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold" />
+
 
     <TextView
         android:layout_width="371dp"
@@ -54,7 +54,7 @@
         >
 
         <RadioButton
-            android:id="@+id/radio_button_Car"
+            android:id="@+id/addradio_button_Car"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Car Insurance"
@@ -63,7 +63,7 @@
             android:textStyle="bold"/>
 
         <RadioButton
-            android:id="@+id/radio_button_Heath"
+            android:id="@+id/addradio_button_Heath"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Health Insurance"
@@ -86,7 +86,7 @@
         android:padding="10dp"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="5dp"
-        android:id="@+id/chooseDeleteInsuraceButton"
+        android:id="@+id/chooseAddInsuraceButton"
 
         />
 </LinearLayout>
