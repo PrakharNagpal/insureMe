@@ -26,7 +26,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Let's simplify your Health Insurance"
+        android:text="Let's simplify your Car Insurance"
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_gravity="center"/>
@@ -34,7 +34,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please look into the details and select your preffered insurance"
+        android:text="Please look into the details and select your preferred insurance"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"/>

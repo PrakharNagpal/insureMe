@@ -44,7 +44,7 @@ class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) 
         val insurance = insurances[position]
         holder.title.text = insurance.companyName
         holder.description.text = insurance.desc
-        holder.price.text = insurance.price.toString()
+        holder.price.text = "₹"+insurance.price.toString()
         holder.itemView.setOnClickListener{
             val context=holder.itemView.context
             val intent=Intent(context,standard_packageinsurancepage_car::class.java)
@@ -56,6 +56,22 @@ class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) 
         if (holder.title.text.equals("HDFC"))
         {
             holder.image.setImageResource(R.drawable.insurance1)
+        }
+        else if (holder.title.text.equals("MAX"))
+        {
+            holder.image.setImageResource(R.drawable.maxlife)
+        }
+        else if(holder.title.text.equals(("ICICI Lombard")))
+        {
+            holder.image.setImageResource(R.drawable.icici)
+        }
+        else if(holder.title.text.equals(("TATA AIG")))
+        {
+            holder.image.setImageResource(R.drawable.tata)
+        }
+        else if(holder.title.text.equals(("Reliance General Insurance")))
+        {
+            holder.image.setImageResource(R.drawable.reliance)
         }
         else
         {

@@ -43,7 +43,7 @@ class HealthInsuranceAdapterNew(private val Healthinsurances: List<healthinsuran
         val insurance = Healthinsurances[position]
         holder.title.text = insurance.companyName
         holder.description.text = insurance.desc
-        holder.price.text = insurance.price.toString()
+        holder.price.text = "₹"+insurance.price.toString()
         holder.itemView.setOnClickListener{
             val context=holder.itemView.context
             val intent=Intent(context,standard_packageinsurancepage_health::class.java)
@@ -52,20 +52,21 @@ class HealthInsuranceAdapterNew(private val Healthinsurances: List<healthinsuran
             intent.putExtra("desc",insurance.desc)
             context.startActivity(intent)
         }
-        if(holder.title.text.equals("Bajaj Allianz"))
-        {
-            holder.image.setImageResource(R.drawable.maxlife)
-        }
+
         if (holder.title.text.equals("HDFC Life Insurance"))
         {
             holder.image.setImageResource(R.drawable.insurance1)
         }
-        if(holder.title.text.equals("SBI General Insurance"))
+        else if(holder.title.text.equals("SBI General Health Insurance"))
         {
             holder.image.setImageResource(R.drawable.sbigen)
         }
+        else if(holder.title.text=="Bajaj Allianz")
+        {
+            holder.image.setImageResource(R.drawable.bajajlogo)
+        }
 
-        if(holder.title.text.equals("Max Life Insurance"))
+        else if(holder.title.text.equals("Max Life Insurance"))
         {
             holder.image.setImageResource(R.drawable.maxlife)
         }
