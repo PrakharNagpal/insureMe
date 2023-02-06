@@ -45,6 +45,14 @@ class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) 
         holder.title.text = insurance.companyName
         holder.description.text = insurance.desc
         holder.price.text = insurance.price.toString()
+        holder.itemView.setOnClickListener{
+            val context=holder.itemView.context
+            val intent=Intent(context,standard_packageinsurancepage_car::class.java)
+            intent.putExtra("title",insurance.companyName)
+            intent.putExtra("price",insurance.price.toString())
+            intent.putExtra("desc",insurance.desc)
+            context.startActivity(intent)
+        }
         if (holder.title.text.equals("HDFC"))
         {
             holder.image.setImageResource(R.drawable.insurance1)
