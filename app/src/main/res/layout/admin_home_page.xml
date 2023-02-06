@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/delete_an_insurance"
-        android:onClick="onUserLoginClick"
+        android:onClick="onDeleteInsuranceClick"
 
         />
 

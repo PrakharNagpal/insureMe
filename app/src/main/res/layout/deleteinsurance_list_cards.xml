@@ -15,31 +15,6 @@
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_margin="15dp"
-
-    android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let's simplify your Health Insurance"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:layout_gravity="center"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Please look into the details and select your preffered insurance"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"/>
-
-
 <androidx.cardview.widget.CardView
 
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -47,7 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:onClick="goToStandardInsuranceCar"
+    android:onClick="goToStandardInsurance"
     app:cardElevation="6dp">
 
     <LinearLayout
@@ -58,23 +33,23 @@
         android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/insurance_company_list"
+            android:id="@+id/deleteinsurance_company_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
 
         <ImageView
             android:paddingTop="20dp"
-            android:id="@+id/insurance_company_image"
+            android:id="@+id/deleteinsurance_company_image"
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
-<!--            android:src="@drawable/insurance1"-->
+        <!--            android:src="@drawable/insurance1"-->
 
 
 
         <TextView
             android:layout_marginTop="10dp"
-            android:id="@+id/insurance_company_title"
+            android:id="@+id/deleteinsurance_company_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -82,13 +57,13 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/insurance_company_description"
+            android:id="@+id/deleteinsurance_company_description"
             android:layout_width="match_parent"
             android:gravity="center"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/insurance_company_price"
+            android:id="@+id/deleteinsurance_company_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -97,4 +72,3 @@
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
-</LinearLayout>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:baselineAligned="false"
 
     android:orientation="vertical"
     android:padding="15dp">
-
     <ImageView
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:src="@drawable/logopg"
         android:layout_gravity="center"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/purple_700"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="7dp"
         android:text="Standard Package"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -29,9 +29,9 @@
     <TextView
         android:layout_width="371dp"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
 
-        android:text="HealthCare package with an outpatient addon"
+
+        android:text="Complete package with third-party Laibility Addon"
         android:textSize="18dp"
         android:textColor="#16242B"
         />
@@ -39,19 +39,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="₹1800/Month"
-    android:textColor="@color/black"
+        android:text="₹18000/Year"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="22dp"
 
-        android:layout_marginBottom="5dp"
+        android:layout_marginVertical="5dp"
         />
     <View
         android:id="@+id/innerLine"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:background="#BCB7B7"
-        android:layout_marginBottom="5dp"/>
+       />
 
 
     <LinearLayout
@@ -67,12 +67,12 @@
 
 
         <TextView
-            android:layout_width="191dp"
+            android:layout_width="254dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Hospital Charges"
+            android:text="Accidental Damage"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -99,7 +99,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Cancer Treatment"
+            android:text="Engine Cover"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -126,7 +126,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Covid-19 Treatment"
+            android:text="Electronic Equipments Cover"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -153,7 +153,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Pre-Existing Conditions"
+            android:text="24/7 Road Side Assistance"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -180,7 +180,7 @@
             android:layout_marginTop="8dp"
             android:paddingTop="16dp"
 
-            android:text="Emegrency Dental"
+            android:text="Lost Key Cover"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -216,7 +216,7 @@
             android:layout_marginTop="3dp"
             android:paddingTop="16dp"
 
-            android:text="Complimentary addon OPD"
+            android:text="Complimentary TPL addon"
             android:textColor="#5E5454"
             android:textSize="22dp"
             android:textStyle="bold"
@@ -231,11 +231,10 @@
         android:id="@+id/addInsuranceButton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-
+android:onClick="gotoLastPage"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="8dp"
         android:backgroundTint="@color/button_background"
-        android:onClick="gotoLastPageHealth"
         android:padding="10dp"
         android:text="CONTINUE"
         android:textSize="20dp"

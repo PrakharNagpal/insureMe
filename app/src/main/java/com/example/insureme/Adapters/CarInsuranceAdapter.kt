@@ -1,4 +1,5 @@
 package com.example.insureme
+import android.content.Intent
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
@@ -15,6 +16,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.insureme.ViewModel.CarInsuranceViewModel
 import com.example.insureme.DataClasses.carinsurance_dataclass
+
+import com.example.insureme.Views.standard_packageinsurancepage_car
+import com.example.insureme.Views.standard_packageinsurancepage_health
 
 class InsuranceAdapterNew(private val insurances: List<carinsurance_dataclass>) :
     RecyclerView.Adapter<InsuranceAdapterNew.InsuranceViewHolder>() {
@@ -73,5 +77,11 @@ class InsuranceActivityNew : AppCompatActivity() {
 
         insuranceCompanyListViewNew.layoutManager = LinearLayoutManager(this)
     }
+    fun goToStandardInsuranceCar(view:View)
+    {
+        startActivity(Intent(this, standard_packageinsurancepage_car::class.java))
+
+    }
+
 }
 

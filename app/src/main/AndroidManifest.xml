@@ -55,7 +55,12 @@
         <activity android:name=".Views.adminLogin"/>
         <activity android:name=".pushHealthInsurance"/>
         <activity android:name=".ChooseAddInsuranceType"/>
-        <activity android:name=".Views.standard_packageinsurancepage"/>
+        <activity android:name=".Views.standard_packageinsurancepage_health"/>
+        <activity android:name=".InsuranceActivityDelete"/>
+        <activity android:name=".HealthInsuranceActivityDelete"/>
+        <activity android:name=".ChooseDeleteInsuranceType"/>
+        <activity android:name=".Views.standard_packageinsurancepage_car"/>
+        <activity android:name=".Views.finalpage"/>
         <!--        <activity android:name=".healthinsuranceuserdetails5"/>-->
 <!--        <activity android:name=".User_Login"/>-->
 
