@@ -42,7 +42,7 @@
         <activity android:name=".Views.Carinsuranceuserdetails1"/>
         <activity android:name=".Views.Carinsuranceuserdetails2"/>
         <activity android:name=".Views.SignUpActivity"/>
-        <activity android:name=".Views.car_userdetails2"/>
+
         <activity android:name=".Views.healthinsuranceuserdetails"/>
         <activity android:name=".Views.healthinsuranceuserdetails1"/>
         <activity android:name=".Views.healthinsuranceuserdetails2"/>

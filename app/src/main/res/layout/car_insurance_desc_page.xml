@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/purple_700"
         android:layout_marginBottom="7dp"
-        android:text="Standard Package"
+     android:id="@+id/cartitletextview"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
 
 
-        android:text="Complete package with third-party Laibility Addon"
+        android:id="@+id/cardesctextview"
         android:textSize="18dp"
         android:textColor="#16242B"
         />
@@ -39,7 +39,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="₹18000/Year"
+        android:id="@+id/carpricetextview"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="22dp"
