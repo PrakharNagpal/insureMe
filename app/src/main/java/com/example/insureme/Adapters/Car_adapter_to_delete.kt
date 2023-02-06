@@ -28,7 +28,7 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory
 class CarInsuranceAdapterDelete(private val insurances: List<carinsurance_dataclass>) :
     RecyclerView.Adapter<CarInsuranceAdapterDelete.InsuranceViewHolder>() {
     private val apiService = Retrofit.Builder()
-        .baseUrl("http://192.168.104.173:5000/carInsurance/")
+        .baseUrl("http://10.20.37.60:5000/carInsurance/")
         .addConverterFactory(SimpleXmlConverterFactory.create())
         .build()
         .create(ApiServiceDelete::class.java)

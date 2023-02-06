@@ -30,7 +30,7 @@ import retrofit2.converter.simplexml.SimpleXmlConverterFactory
 class HealthInsuranceAdapterDelete(private val Healthinsurances: List<healthinsurance_dataclass>) :
     RecyclerView.Adapter<HealthInsuranceAdapterDelete.HealthInsuranceViewHolder>() {
     private val apiService = Retrofit.Builder()
-        .baseUrl("http://192.168.104.173:5000/healthInsurance/")
+        .baseUrl("http://10.20.37.60:5000/healthInsurance/")
         .addConverterFactory(SimpleXmlConverterFactory.create())
         .build()
         .create(ApiServiceDelete::class.java)
@@ -38,10 +38,10 @@ class HealthInsuranceAdapterDelete(private val Healthinsurances: List<healthinsu
         // val image = itemView.findViewById<ImageView>(R.id.insurance_company_image)
 
 
-        val title = itemView.findViewById<TextView>(R.id.healthinsurance_company_title)
-        val description = itemView.findViewById<TextView>(R.id.healthinsurance_company_description)
-        val price = itemView.findViewById<TextView>(R.id.healthinsurance_company_price)
-        val image=itemView.findViewById<ImageView>(R.id.healthinsurance_company_image)
+        val title = itemView.findViewById<TextView>(R.id.deleteinsurance_company_title)
+        val description = itemView.findViewById<TextView>(R.id.deleteinsurance_company_description)
+        val price = itemView.findViewById<TextView>(R.id.deleteinsurance_company_price)
+        val image=itemView.findViewById<ImageView>(R.id.deleteinsurance_company_image)
 
 
         fun bind(_id: String,apiService: ApiServiceDelete)
@@ -78,7 +78,7 @@ class HealthInsuranceAdapterDelete(private val Healthinsurances: List<healthinsu
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HealthInsuranceViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.healthinsurance_list_cards, parent, false)
+            .inflate(R.layout.deleteinsurance_list_cards, parent, false)
         return HealthInsuranceViewHolder(view)
     }
     override fun getItemCount() = Healthinsurances.size
@@ -112,8 +112,8 @@ class HealthInsuranceActivityDelete : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.healthinsurance_list_cards)
-        val HealthinsuranceCompanyListViewNew = findViewById<RecyclerView>(R.id.healthinsurance_company_list)
+        setContentView(R.layout.deleteinsurance_list_cards)
+        val HealthinsuranceCompanyListViewNew = findViewById<RecyclerView>(R.id.deleteinsurance_company_list)
         viewModel = ViewModelProvider(this).get(HealthInsuranceViewModel::class.java)
         lifecycleScope.launch {
 

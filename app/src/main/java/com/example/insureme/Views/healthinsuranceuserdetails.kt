@@ -18,7 +18,7 @@ class healthinsuranceuserdetails : AppCompatActivity() {
 
         healthContinue1 .setOnClickListener {
             startActivity(Intent(this, healthinsuranceuserdetails1::class.java))
-            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+         //   Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
         }
 
@@ -33,7 +33,7 @@ class healthinsuranceuserdetails1:AppCompatActivity() {
         val healthContinue2 = findViewById<Button>(R.id.healthContinue2)
         healthContinue2.setOnClickListener {
             startActivity(Intent(this, healthinsuranceuserdetails2::class.java))
-            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
         }
     }
@@ -47,7 +47,7 @@ class healthinsuranceuserdetails2:AppCompatActivity() {
         val healthContinue2 = findViewById<Button>(R.id.healthContinue3)
         healthContinue2.setOnClickListener {
             startActivity(Intent(this, healthinsuranceuserdetails3::class.java))
-            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+           // Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
 
         }
@@ -60,7 +60,7 @@ class healthinsuranceuserdetails3:AppCompatActivity(){
         val heathContinue3=findViewById<Button>(R.id.healthContinue4)
         heathContinue3.setOnClickListener {
             startActivity(Intent(this, healthinsuranceuserdetails4::class.java))
-            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
 
         }
@@ -73,7 +73,7 @@ class healthinsuranceuserdetails4:AppCompatActivity() {
         val healthContinue4 = findViewById<Button>(R.id.healthContinue5)
         healthContinue4.setOnClickListener {
             startActivity(Intent(this, HealthInsuranceActivityNew::class.java))
-            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+           // Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
 
         }

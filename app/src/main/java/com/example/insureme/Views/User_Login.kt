@@ -121,7 +121,7 @@ class UserLoginActivity : AppCompatActivity() {
         val loginbutton= findViewById<Button>(R.id.loginButton)
         val loginId = loginIdEditText.text.toString().trim()
         val password = passwordEditText.text.toString().trim()
-        if (Patterns.EMAIL_ADDRESS.matcher(loginId).matches()) {
+        if ((Patterns.EMAIL_ADDRESS.matcher(loginId).matches())&&loginId.equals("user@insureme.com")&&password.toString().equals("user123")) {
             Toast.makeText(applicationContext, "Valid email address",
                 Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this, Select_Insurance::class.java))
@@ -129,7 +129,7 @@ class UserLoginActivity : AppCompatActivity() {
 
 
         } else {
-            Toast.makeText(applicationContext, "Invalid email address",
+            Toast.makeText(applicationContext, "Invalid Credentials",
                 Toast.LENGTH_SHORT).show()
             loginIdEditText.requestFocus()
             return
