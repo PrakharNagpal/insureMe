@@ -27,20 +27,21 @@ class adminLogin : AppCompatActivity() {
         val loginbutton= findViewById<Button>(R.id.adminloginButtonnew)
         val loginId = loginIdEditText.text.toString().trim()
         val password = passwordEditText.text.toString().trim()
-        if (Patterns.EMAIL_ADDRESS.matcher(loginId).matches()) {
-            Toast.makeText(applicationContext, "Valid email address",
-                Toast.LENGTH_SHORT).show()
+        if ((Patterns.EMAIL_ADDRESS.matcher(loginId).matches())&&loginId.equals("admin@insureme.com")&&password.toString().equals("admin123")) {
+
             startActivity(Intent(this, adminhome::class.java))
             Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
 
         } else {
-            Toast.makeText(applicationContext, "Invalid email address",
-                Toast.LENGTH_SHORT).show()
             loginIdEditText.requestFocus()
+            Toast.makeText(applicationContext, "INVALID CREDENTIALS",
+                Toast.LENGTH_SHORT).show()
+
             return
 
         }
+
         if (loginId.isEmpty()) {
             loginIdEditText.error = "Login ID is required"
             loginIdEditText.requestFocus()
