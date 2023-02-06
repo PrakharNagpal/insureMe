@@ -18,7 +18,7 @@ class Carinsuranceuserdetails : AppCompatActivity() {
 
            CarContinue1 .setOnClickListener {
                startActivity(Intent(this, Carinsuranceuserdetails1::class.java))
-               Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+              // Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
            }
 
@@ -33,7 +33,7 @@ class Carinsuranceuserdetails1:AppCompatActivity() {
         val CarContinue2 = findViewById<Button>(R.id.CarContinue2)
         CarContinue2.setOnClickListener {
             startActivity(Intent(this, Carinsuranceuserdetails2::class.java))
-            Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+          //  Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
 
         }
     }

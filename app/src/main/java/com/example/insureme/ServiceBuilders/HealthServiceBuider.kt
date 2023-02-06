@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object HealthServiceBuilder {
-    private const val healthURL ="http://192.168.104.173:5000/healthInsurance/"
+    private const val healthURL ="http://10.20.37.60:5000/healthInsurance/"
     //CREATE HTTP CLIENT
 //        private val okHttp =OkHttpClient.Builder()
 
