@@ -87,15 +87,28 @@ class HealthInsuranceAdapterDelete(private val Healthinsurances: List<healthinsu
         val healthinsurance = Healthinsurances[position]
         holder.title.text = healthinsurance.companyName
         holder.description.text = healthinsurance.desc
-        holder.price.text = healthinsurance.price.toString()
+        holder.price.text = "₹"+healthinsurance.price.toString()
 
 
-        if (holder.title.text.equals("HDFC"))
+        if (holder.title.text.equals("HDFC Life Insurance"))
         {
             holder.image.setImageResource(R.drawable.insurance1)
         }
-        else
+        else if(holder.title.text.equals("SBI General Health Insurance"))
         {
+            holder.image.setImageResource(R.drawable.sbigen)
+        }
+        else if(holder.title.text=="Bajaj Allianz")
+        {
+            holder.image.setImageResource(R.drawable.bajajlogo)
+        }
+
+        else if(holder.title.text.equals("Max Life Insurance"))
+        {
+            holder.image.setImageResource(R.drawable.maxlife)
+        }
+
+        else {
             holder.image.setImageResource(R.drawable.insurance2)
         }
         holder.bind(healthinsurance._id, apiService )
